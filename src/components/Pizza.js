@@ -15,7 +15,7 @@ const Pizza = () => {
         sausage:"",
         ham:"",
         anchovies:"",
-        special:"true"
+        special:""
     }
     //state for button
     const [buttonDisabled, setButtonDisabled] = useState(true)
@@ -124,7 +124,7 @@ const Pizza = () => {
             </label>
             <label htmlFor= "ham">
                 Ham
-                <input type = "checkbox" name ="ham" checked = {formState.ham} value = {formState.turtleNeck} onChange = {inputChange} data-cy = "turtleNeck" />
+                <input type = "checkbox" name ="ham" checked = {formState.ham} value = {formState.ham} onChange = {inputChange} data-cy = "ham" />
             </label>
             <label htmlFor= "anchovies">
                 Anchovies!
@@ -135,7 +135,7 @@ const Pizza = () => {
                 <textarea name ="special" value = {formState.special} onChange = {inputChange} data-cy = "special" />
                 {errors.special.length > 0 ? <p>{errors.special}</p> : null}
             </label>
-            <Button disabled = {buttonDisabled} type = "submit" color = "danger" data-cy = "submit" >Submit</Button>
+            <Button data-cy="submit" disabled={buttonDisabled}>Submit</Button>
         </form>
     </div>
    )
