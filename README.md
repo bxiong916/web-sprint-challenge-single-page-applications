@@ -37,11 +37,11 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 1. How would you explain form validation to someone who has never programmed before?
 
-    Form Validation is the behind the scenes code that makes it so that you cant submit data that doesnt meet a certain requirement - for example alot of places will have a 'strength of password' validation - if you dont create a password that meets a certain criteria, say, have a number and a symbol in it. The form will not let you move on. This increase the chance of success requirement that you are looking for in the form and prevent input that is not acceptable. Basically to check and see if a form matches a certain requirement you set in place.
+Form validation normally used to occur at the server, after the client had entered all the necessary data and then pressed the Submit button. ... JavaScript provides a way to validate form's data on the client's computer before sending it to the web server. Form validation generally performs two functions.
 
 1. In 1-2 sentences, define end to end testing.
 
-    End to end testing is generally done by a mix of human and ai - it tries to test every single thing that could possibly be done with the application to ensure bugs are found by the designer and not the user.
+End to end testing refers to a software testing method that involves testing an application's workflow from beginning to end. ... Usually, End to end testing  is executed after functional and system testing is complete.
 
 ## Instructions
 
