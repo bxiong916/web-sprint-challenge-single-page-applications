@@ -15,13 +15,13 @@ describe('Testing Pizza Form', () => {
         .type("Nope")
         .should('have.value',"Nope");
 
-        //checking selecting from drop down
+        // select  sizes
         cy
         .get('[data-cy = size]')
         .select("Medium")
         .should('have.value','Medium');
 
-        //testing checking multiple toppings
+        // check toppings
         cy
         .get('[data-cy = peperoni]')
         .check()
@@ -39,7 +39,7 @@ describe('Testing Pizza Form', () => {
         .check()
         .should('be.checked');
 
-        //checking Submit
+        // submits the form
         cy
         .get('[data-cy = submit]')
         .click();

@@ -1,13 +1,21 @@
-import React from "react";
-import { Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import img from "../Images/pizzabackground.jpg";
+import styled from "styled-components";
 
-const Home= () => {
-    return(
-        <div>
-              <Link to = "/pizza"><Button color = "secondary" type = "submit">Click Here To Create You're Own Custom Pizza!</Button> </Link>
-        </div>
+const ImageBackground = styled.div`
+    /* vertical-align: top; */
+    display: block;
+    width: 100vw;
+`
+
+const Home = () => {
+    return (
+        <ImageBackground>
+         <h1 style={{position: "fixed", color: "red", fontSize: '5rem', marginLeft: "20%", fontFamily: "Sansita Swashed"}}>Lamda Pizza</h1>
+         <h4 style={{position: "fixed", color: "red", fontSize: '2rem', marginLeft: "55%", marginTop: "20%", fontFamily: "Sansita Swashed"}}>Pizza! Pizza! Pizza!</h4>
+         <img src={img} alt="pizza" style={{postion: "", width: "100vw", height:"100vh"}}/>
+        </ImageBackground>
     )
 }
 
-export default Home;
+export default Home

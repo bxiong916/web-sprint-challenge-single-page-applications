@@ -15,7 +15,7 @@ header{
   justify-content:center;
 }
 p{
-  color:white;
+  color:black;
   margin:20px;
   text-align:center;
   font-weight:bold;
@@ -23,14 +23,14 @@ p{
 .carousel{
   color:red;
 }
-h1{
+/* h1{
   color:white;
 }
 .container{
   width:100%;
   max-height:50vh;
   overflow:hidden;
-}
+} */
 .carousel-item{ 
  overflow:hidden;
 }
